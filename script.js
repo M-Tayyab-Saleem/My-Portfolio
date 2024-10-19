@@ -10,7 +10,7 @@ function toggleMenu() {
      
 
      function slideforward () {
-          if(tx > -40){
+          if(tx > -90){
             tx -= 15;
           }
           container.style.transform = `translateX(${tx}%)`;
