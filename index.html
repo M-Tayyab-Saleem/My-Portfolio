@@ -8,6 +8,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <nav id="desktop-nav">
@@ -220,8 +221,8 @@
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
+      <div class="experience-details-container"> 
+        <div class="about-containers " id="scroll-container">
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -270,15 +271,40 @@
                 Live Demo
               </button>
             </div>
-          </div><div class="details-container color-container">
+          </div>
+          <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/edusity.PNG"
+                src="./assets/whatsapp.PNG"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Edusit</h2>
+            <h2 class="experience-sub-title project-title">Mini WhatsApp</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/M-Tayyab-Saleem/Mini-Whatsapp-Clone'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://mini-whatsapp-clone.onrender.com/chats'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/edusity.PNG"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Edusity</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -288,7 +314,79 @@
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="window.open('./assets/progrss.pdf')"
+                onclick="location.href='https://edusity-inky-three.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/quora.PNG"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Mini Quora Post</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/M-Tayyab-Saleem/Mini-Quora-Post-'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://mini-quora-post.onrender.com/posts'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/spotify.PNG"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Spotify UI Clone</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/M-Tayyab-Saleem/Spotify-Clone'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://spotify-clone-lemon-seven.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/amazon.PNG"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Amazon UI Clone</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/M-Tayyab-Saleem/Amazon-Clone'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://amazon-clone-theta-plum-88.vercel.app/'"
               >
                 Live Demo
               </button>
@@ -296,6 +394,8 @@
           </div>
         </div>
       </div>
+      <i class="fa-solid fa-chevron-right " onclick="slideforward()"></i>
+      <i class="fa-solid fa-chevron-left" onclick="slidebackward()" ></i>
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"

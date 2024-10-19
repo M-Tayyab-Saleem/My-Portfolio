@@ -6,18 +6,18 @@ function toggleMenu() {
   }
 
      let tx = 0;
-     let container = document.getElementById("cont")
+     let container = document.getElementById("scroll-container")
      
 
      function slideforward () {
-          if(tx > -50){
-            tx -= 25;
+          if(tx > -40){
+            tx -= 15;
           }
-          cont.style.transform = "translateX(-25%)"
+          container.style.transform = `translateX(${tx}%)`;
      } 
      function slidebackward () {
         if(tx < 0){
-          tx += 25;
+          tx += 15;
         }
-        slider.current.style.transform = `translateX(${tx}%)`;
+         container.style.transform = `translateX(${tx}%)`;
    } 
