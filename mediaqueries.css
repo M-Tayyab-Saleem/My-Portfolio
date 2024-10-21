@@ -125,11 +125,12 @@
 
   @media screen and (max-width: 600px) {
     .color-container{
-      width: 200px !important;
+      width: 200 !important;
     }
     #scroll-container{
       padding-left: 3rem;
       padding-right: 3rem;
+      width: 600%;
     }
    
   }

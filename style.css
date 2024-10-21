@@ -392,6 +392,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  overflow: hidden;
 }
 
 .contact-info-upper-container {
