@@ -452,7 +452,7 @@ footer p {
   left: -3rem;
 }
 #scroll-container{
-  width: 200%;
+  width: 250%;
   overflow: hidden;
   transition: 0.5s;
   padding-right: 30rem;
